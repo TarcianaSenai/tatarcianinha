@@ -1,0 +1,192 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #DFF2E1;
+}
+
+/* HERO */
+header.hero {
+    background: linear-gradient(135deg, #2E7D32 0%, #0B4F2A 100%);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+header.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+header.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+header.hero img {
+    width: 85%;
+    max-width: 650px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+img.imagemmm{   
+    display: flex;
+    margin: 40px auto;
+    width: 1000px;}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+}
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #222;
+}
+
+/* SERVIÇOS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #DFF2E1;
+    border-radius: 14px;
+    padding: 30px;
+
+    /* SOMBRA VERDE */
+    box-shadow:
+        0 10px 25px rgba(46, 125, 50, 0.18),
+        0 4px 10px rgba(63, 163, 77, 0.12);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    /* SOMBRA VERDE MAIS VIVA NO HOVER */
+    box-shadow:
+        0 18px 35px rgba(46, 125, 50, 0.28),
+        0 8px 18px rgba(111, 191, 74, 0.22);
+}
+
+.card h3 {
+    color: #2E7D32;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #355E3B;
+    font-size: 1rem;
+}
+
+/* SOBRE */
+.about {
+    background: #6FBF4A;
+    color: #DFF2E1;
+    text-align: center;
+    border-radius: 12px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.about h2 {
+    color: #DFF2E1;
+}
+.about p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* CONTATO */
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+form input, form textarea {
+    padding: 14px;
+    border: 2px solid #DFF2E1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+form input:focus, form textarea:focus {
+    border-color: #0B4F2A;
+    outline: none;
+}
+form button {
+    padding: 16px;
+    border: none;
+    background: #0B4F2A;
+    color: #DFF2E1;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+}
+form button:hover {
+    background: #0056b3;
+}
+
+/* FOOTER */
+footer {
+background: linear-gradient(135deg, #2E7D32 0%, #0B4F2A 100%);
+color: #DFF2E1;
+text-align: center;
+padding: 50px 20px;
+margin-top: 80px;
+}
+
+
+footer img {
+width: 140px;
+margin-bottom: 20px;
+}
+
+
+footer p {
+font-size: 0.95rem;
+margin: 10px 0;
+opacity: 0.9;
+}
+
+
+footer .social {
+display: flex;
+justify-content: center;
+gap: 25px;
+margin: 20px 0;
+}
+
+
+footer .social a {
+color: #DFF2E1;
+text-decoration: none;
+font-weight: 600;
+transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+footer .social a:hover {
+color: #6FBF4A;
+transform: translateY(-2px);
+}
